@@ -1,0 +1,32 @@
+# CONSTRUIR DOCKER IMAGE
+
+> docker build -t alsantos123/dev-nodejs .
+
+# PUBLICAR DOCKER IMAGE
+> docker push alsantos123/dev-nodejs:latest
+
+# EXEMPLOS DE USO
+
+Abrir o terminal e iniciar
+> docker run -p 3000:3000 -it --name nextjs alsantos123/dev-nodejs /bin/bash
+
+Para entrar dentro de um container em execução.
+> docker exec -ti nextjs /bin/bash
+
+# DOCKER SHEET
+
+> docker system prune -a
+> docker ps -a
+
+> docker volume ls
+> docker volume prune
+
+> docker network ls
+> docker netowrk prune
+
+> docker image ls
+> docker image rm [img]
+
+> docker container ls
+> docker container rm
+> docker container run dev-one
